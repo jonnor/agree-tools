@@ -8,6 +8,10 @@ including `preconditions`, `postconditions` and `class invariants`.
 This repository contains the developer tools that come with Agree.
 For general information about the library, go to [jonnor/agree](https://github.com/jonnor/agree).
 
+## Installing
+
+    npm install --save-dev agree-tools
+
 ## Tools
 
 `agree-doc` can introspect modules and generate plain-text documentation.
