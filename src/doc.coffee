@@ -4,7 +4,8 @@
 # - TODO: allow programs using Agree docs, to have a function they can call in order to 'self-document'
 
 common = require './common'
-introspection = require './introspection'
+agree = require 'agree'
+introspection = agree.introspection
 
 extractDoc = (module) ->
   structured =

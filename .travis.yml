@@ -18,5 +18,5 @@ deploy:
     secure: bqabkI5UL1I6M/rBiQ7tbJkwhmSmnrBANFIolFiLp22whpfzmXgllqSiDD9I6wHe5FFvA9QqmQwQCwJoRSNgtT9HZHn2bSMdjaW2rfLtlFniZggAT7kOXH4KsxH64IyoUXs64DXhkQjIxRZGbsE3aGt0WNTG2oUSIP8sMU+iXa0=
   on:
     tags: true
-    repo: jonnor/agree
+    repo: jonnor/agree-test
     branch: master

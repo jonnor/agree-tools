@@ -1,7 +1,6 @@
 
 chai = require 'chai'
 agree = require '../'
-examples = require './examples'
 
 Promise = agree.Promise
 conditions = agree.conditions

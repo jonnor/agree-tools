@@ -31,7 +31,7 @@
 
 # MAYBE: Support reducing failures to a minimal case
 
-agree = require './agree'
+agree = require 'agree'
 
 pairsFromChain = (chain) ->
   pairs = []
