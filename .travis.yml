@@ -4,9 +4,9 @@ node_js:
 addons:
   apt:
     sources:
-      - ubuntu-toolchain-r-test
+    - ubuntu-toolchain-r-test
     packages:
-      - g++-4.8
+    - g++-4.8
 env:
   matrix:
   - CXX=g++-4.8
@@ -15,8 +15,7 @@ deploy:
   provider: npm
   email: jononor@gmail.com
   api_key:
-    secure: bqabkI5UL1I6M/rBiQ7tbJkwhmSmnrBANFIolFiLp22whpfzmXgllqSiDD9I6wHe5FFvA9QqmQwQCwJoRSNgtT9HZHn2bSMdjaW2rfLtlFniZggAT7kOXH4KsxH64IyoUXs64DXhkQjIxRZGbsE3aGt0WNTG2oUSIP8sMU+iXa0=
+    secure: lL5I3UCLj1zglHcjsw+sDzhk7c5U3pr1Gi2dEN7pn2lXb+E/GkcDOwDOtRFXWoVFXy17yCm306iaBoKcPUK83erZhBF4dxvetlLBffhkwud2ZI1X5SEMzN07ay+180IoIL+JmJ1d3wgZvU+Gzs680HtdqWAEtBAN+dNLvc5w5aeP3xTSqFCJ/VTcdGOq9F4fbAGiNu/N7atWCcNOoO4wRZrWYVVuQProJh/vdqKODhBVcToMmPNF0StfE2Z3/sAUOfEVYglISqk+wrRxLiYGFeb30H+jBg805VmWQ1vQCoILQ4d3NyyZ+aAA2la1CPLPQiYfCX8FxnJ/jKdDurbKR6QG4tBEkaQfrWEaghNZ0eUJnOBda2HnRt+PqyPvlLYn/nUge4lTAUnaN7wASBvWuhRoib9Be88vn62ZjWj0xtmPnljV6Lo/uJKMFg6xwl19zXjvokwgtwoMI67C9TngkSvmJUk5qCOrK+W0EWJ9DWYO1xmuC6rd5YmAWyZd10OYd9eijRWhNlEfvUDHu4rOSlJQCbzKWcZjSUF26tg3MJ8CvnjXowpv5cg5EvcqeGFd37UZ5PHYAWw4a29BHUjsP7pUvpECLcTir1TZ9vPeL2/OepY0mTUIEzz3Jl5gPJAFnLtZ87G1oCZKbdI6+I5th4sgpfpqXKpqciUgZ3n91OU=
   on:
     tags: true
-    repo: jonnor/agree-test
-    branch: master
+    repo: jonnor/agree-tools
