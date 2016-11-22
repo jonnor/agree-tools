@@ -1,14 +1,11 @@
 
 chai = require 'chai'
 agree = require '../'
-
-projectPath = (p) ->
-  path = require 'path'
-  return path.join __dirname, '..', p
+utils = require './utils'
 
 agreeTest = (modulePath, callback) ->
   child_process = require 'child_process'
-  prog = projectPath "./bin/agree-test"
+  prog = utils.projectPath "./bin/agree-test"
   args = [
     modulePath
   ]
@@ -25,7 +22,7 @@ findFails = (str) ->
 describe 'agree-test', ->
 
   describe 'on HTTP server example', ->
-    example = projectPath 'examples/httpserver.coffee'
+    example = utils.agreePath 'examples/httpserver.coffee'
     stdout = ""
     stderr = ""
 

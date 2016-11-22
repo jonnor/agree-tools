@@ -1,14 +1,11 @@
 
 chai = require 'chai'
 agree = require '../'
-
-projectPath = (p) ->
-  path = require 'path'
-  return path.join __dirname, '..', p
+utils = require './utils'
 
 agreeDoc = (modulePath, extraArgs, callback) ->
   child_process = require 'child_process'
-  prog = projectPath "./bin/agree-doc"
+  prog = utils.projectPath "./bin/agree-doc"
   args = [
     modulePath
   ].concat extraArgs
@@ -18,7 +15,7 @@ agreeDoc = (modulePath, extraArgs, callback) ->
 describe 'agree-doc', ->
 
   describe 'on HTTP server example', ->
-    example = projectPath 'examples/httpserver.coffee'
+    example = utils.agreePath 'examples/httpserver.coffee'
     stdout = ""
     stderr = ""
 
